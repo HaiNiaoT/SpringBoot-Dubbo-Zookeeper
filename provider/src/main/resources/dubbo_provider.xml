@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+http://dubbo.apache.org/schema/dubbo ">
+
+    <!--线程模型，用来解决不同场景下请求和其他时间处理 参见：http://dubbo.apache.org/zh-cn/docs/user/demos/thread-model.html-->
+    <dubbo:protocol name="dubbo" dispatcher="all" threadpool="fixed" threads="1000"></dubbo:protocol>
+
+
+
+</beans>
