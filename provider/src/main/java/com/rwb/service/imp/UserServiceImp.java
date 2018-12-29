@@ -6,7 +6,11 @@ import com.rwb.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Service
+/**
+ * cluster = "failfast" 集群的容错机制，应与服务的消费方相匹配，参考com.rwb.service.UserRefe
+ * loadbalance = "consistenthash" 负载均衡机制设置为“一致性 Hash”，消费者请求总是发到同一个提供者。
+ * */
+@Service(cluster = "failfast",timeout = 50000,loadbalance = "consistenthash")
 public class UserServiceImp implements UserService {
     private final static Logger log = LoggerFactory.getLogger(UserServiceImp.class);
     @Override

@@ -6,7 +6,8 @@
 	<modules>
 		<module>../provider</module>
 		<module>../consumer</module>
-	</modules>
+        <module>../provider_two</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
