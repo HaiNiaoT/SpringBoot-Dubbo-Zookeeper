@@ -2,92 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cbdf53-ad7e-48ae-b275-a141362e963f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/src/main/java/com/rwb/API/AcceptsNumTset.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/src/main/java/com/rwb/API/CallbackListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/src/main/java/com/rwb/API/CallbackService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/src/main/java/com/rwb/API/ConcurrencyNumTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/src/main/java/com/rwb/API/IDemoService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/src/main/java/com/rwb/API/LocalStub.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/src/main/java/com/rwb/API/MockService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/CallbackRefe.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/LocalRefe.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/MockRefe.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/Notify.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/NotifyRefe.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/imp/NotifyImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/util/ConcurrencyTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/util/DubboBeanUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/test/java/com/rwb/controller/LocalHostTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/consumerByXml/src/test/java/com/rwb/controller/RegistryTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/imp/MockServiceImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/imp/UserServiceImo1.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/AcceptsNumTestImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/CallbackServiceImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/ConcurrencyNumTestImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/DemoServiceImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/LocalStubImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/MockServiceImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/provider_two/src/main/resources/dubbo.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_4_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_4_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SpringBootDubboZookeeper/pom.xml" afterPath="$PROJECT_DIR$/SpringBootDubboZookeeper/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/ConsumerApplication.java" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/ConsumerApplication.java" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/controller/UserController.java" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/service/ExchangeService.java" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/service/ExchangeService.java" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/service/UserRefe.java" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/service/UserRefe.java" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/service/UserService.java" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/rwb/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/dubboConfigure.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/application.properties" afterPath="$PROJECT_DIR$/consumer/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/rwb/ConsumerApplication.class" afterPath="$PROJECT_DIR$/consumer/target/classes/com/rwb/ConsumerApplication.class" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/rwb/controller/UserController.class" afterPath="$PROJECT_DIR$/consumer/target/classes/com/rwb/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/rwb/service/UserRefe.class" afterPath="$PROJECT_DIR$/consumer/target/classes/com/rwb/service/UserRefe.class" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/rwb/service/UserService.class" afterPath="$PROJECT_DIR$/consumer/target/classes/com/rwb/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/consumerByXml/consumerByXml.iml" afterPath="$PROJECT_DIR$/consumerByXml/consumerByXml.iml" />
-      <change beforePath="$PROJECT_DIR$/consumerByXml/pom.xml" afterPath="$PROJECT_DIR$/consumerByXml/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/ConsumerApplication.java" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/ConsumerByXml.java" />
-      <change beforePath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/controller/UserController.java" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/UserRefe.java" afterPath="$PROJECT_DIR$/consumerByXml/src/main/java/com/rwb/service/UserRefe.java" />
-      <change beforePath="$PROJECT_DIR$/consumerByXml/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.cluster.Merger" afterPath="$PROJECT_DIR$/consumerByXml/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.cluster.Merger" />
-      <change beforePath="$PROJECT_DIR$/consumerByXml/src/main/resources/dubboConfigure.xml" afterPath="$PROJECT_DIR$/consumerByXml/src/main/resources/dubboConfigure.xml" />
-      <change beforePath="$PROJECT_DIR$/provider/pom.xml" afterPath="$PROJECT_DIR$/provider/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/provider/provider.iml" afterPath="$PROJECT_DIR$/provider/provider.iml" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/rwb/ProviderApplication.java" afterPath="$PROJECT_DIR$/provider/src/main/java/com/rwb/ProviderApplication.java" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/UserService.java" afterPath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/imp/ExchangeServicImp.java" afterPath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/imp/ExchangeServicImp.java" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/imp/UserServiceImp.java" afterPath="$PROJECT_DIR$/provider/src/main/java/com/rwb/service/imp/UserServiceImp.java" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/resources/dubbo_provider.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/application.properties" afterPath="$PROJECT_DIR$/provider/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/rwb/ProviderApplication.class" afterPath="$PROJECT_DIR$/provider/target/classes/com/rwb/ProviderApplication.class" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/rwb/service/UserService.class" afterPath="$PROJECT_DIR$/provider/target/classes/com/rwb/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/rwb/service/imp/UserServiceImp.class" afterPath="$PROJECT_DIR$/provider/target/classes/com/rwb/service/imp/UserServiceImp.class" />
-      <change beforePath="$PROJECT_DIR$/provider_two/pom.xml" afterPath="$PROJECT_DIR$/provider_two/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/provider_two/provider_two.iml" afterPath="$PROJECT_DIR$/provider_two/provider_two.iml" />
-      <change beforePath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/ProviderTwoApplication.java" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/ProviderTwoApplication.java" />
-      <change beforePath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/ExchangeService.java" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/ExchangeService.java" />
-      <change beforePath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/ExchangeServicImp.java" afterPath="$PROJECT_DIR$/provider_two/src/main/java/com/rwb/service/imp/ExchangeServicImp.java" />
-      <change beforePath="$PROJECT_DIR$/provider_two/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/provider_two/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/provider_two/src/main/resources/dubbo.xml" afterPath="$PROJECT_DIR$/provider_two/src/main/resources/dubbo.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/SpringBootDubboZookeeper/target/" />
     <ignored path="$PROJECT_DIR$/consumer/target/" />
@@ -118,8 +34,8 @@
       <file leaf-file-name="dubbo.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/provider_two/src/main/resources/dubbo.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+            <state relative-caret-position="168">
+              <caret line="65" column="65" lean-forward="true" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -844,7 +760,7 @@
       <workItem from="1546499547611" duration="11868000" />
       <workItem from="1546677536341" duration="7636000" />
       <workItem from="1546760909334" duration="8172000" />
-      <workItem from="1546850200631" duration="2960000" />
+      <workItem from="1546850200631" duration="3228000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交测试">
       <created>1545793913765</created>
@@ -874,18 +790,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546166409311</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dubbo的学习">
+      <created>1546853466282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546853466283</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82954000" />
+    <option name="totallyTimeSpent" value="83222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375419" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -901,7 +824,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375419" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375419" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26877683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -928,7 +851,8 @@
     <MESSAGE value="首次提交测试" />
     <MESSAGE value="dubbo.xml文件" />
     <MESSAGE value="基于xml文件进行dubbo配置消费者" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="dubbo的学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="dubbo的学习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1324,8 +1248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/provider_two/src/main/resources/dubbo.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        <state relative-caret-position="168">
+          <caret line="65" column="65" lean-forward="true" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
           <folding />
         </state>
       </provider>
