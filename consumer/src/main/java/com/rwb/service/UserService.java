@@ -1,6 +1,5 @@
 package com.rwb.service;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 
 /**
  * 消费方调用服务提供方的服务时，应提供与服务的提供方提供相同签名的
@@ -10,4 +9,6 @@ import com.alibaba.dubbo.config.annotation.Reference;
 public interface UserService {
 
     String SayHello(String name);
+
+    String SayBay(String name);
 }

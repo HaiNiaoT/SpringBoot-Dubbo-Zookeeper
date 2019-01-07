@@ -7,8 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.ImportResource;
 
-@Service(version = "1.1.0")
-@ImportResource(locations = {"classpath=application.properties"})
+@Service(version = "1.1.0",group = "rwb")
 public class ExchangeServicImp implements ExchangeService {
 
     private static final Logger log = LoggerFactory.getLogger(ExchangeServicImp.class);
@@ -17,5 +16,11 @@ public class ExchangeServicImp implements ExchangeService {
     public String Word(String name) {
         log.info("request address {}", RpcContext.getContext().getRemoteAddress());
         return String.format("%s : Hello,Response %s, version %s",name,RpcContext.getContext().getLocalAddress(),"1.1.0");
+    }
+
+    @Override
+    public String SayBay(String name) {
+        log.info("Bay address {}", RpcContext.getContext().getRemoteAddress());
+        return String.format("%s : Bay,Response %s, version %s",name,RpcContext.getContext().getLocalAddress(),"1.1.0");
     }
 }

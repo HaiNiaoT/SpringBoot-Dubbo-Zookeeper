@@ -1,7 +1,6 @@
 package com.rwb.controller;
 
 import com.rwb.service.UserRefe;
-import com.rwb.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ public class UserController {
 
     @GetMapping("say")
     public String Say(){
-        String info = userRefe.Say("Ren");
+        String info = userRefe.SayHello("Ren");
         log.info(info);
 
         return info;
@@ -30,4 +29,5 @@ public class UserController {
         log.info(info);
         return info;
     }
+
 }

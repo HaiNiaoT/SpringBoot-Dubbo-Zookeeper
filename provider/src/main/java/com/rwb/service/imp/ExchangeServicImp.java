@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 /**
  * version = "1.0.0" 配置版本，消费者也需要配置 例：com.rwb.service.UserRefe
  */
-@Service(version = "1.0.0")
+@Service(version = "1.0.0",group = "rwb")
 public class ExchangeServicImp implements ExchangeService {
 
     private static final Logger log = LoggerFactory.getLogger(ExchangeServicImp.class);

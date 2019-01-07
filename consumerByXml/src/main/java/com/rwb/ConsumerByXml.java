@@ -6,8 +6,8 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @ImportResource(value = {"classpath:dubboConfigure.xml"})
-public class ConsumerApplication {
+public class ConsumerByXml {
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerApplication.class,args);
+        SpringApplication.run(ConsumerByXml.class,args);
     }
 }

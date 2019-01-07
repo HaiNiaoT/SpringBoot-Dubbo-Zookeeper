@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 配置可参考 http://dubbo.io/User+Guide-zh.htm -->
+    <!-- 服务提供方应用名，用于计算依赖关系 -->
+    <dubbo:application name="provider-dubbo2" />
+
+    <!-- 定义 zookeeper 注册中心地址及协议 -->
+    <dubbo:registry address="zookeeper://47.99.242.112:2181" />
+
+    <!-- 定义 Dubbo 协议名称及使用的端口，dubbo 协议缺省端口为 20880，如果配置为 -1 或者没有配置 port，则会分配一个没有被占用的端口 -->
+    <dubbo:protocol name="dubbo" port="20883" />
+
+
+
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="com.rwb.service.ExchangeService"
+                   ref="demoService" group="rwb" timeout="10000" version="1.1.0" executes="10" />
+
+    <!-- 和本地 bean 一样实现服务 -->
+    <bean id="demoService" class="com.rwb.service.imp.ExchangeServicImp" />
+
+    <bean id="callbackService" class="com.rwb.service.imp.CallbackServiceImp" />
+
+    <!--参数回调-->
+    <dubbo:service interface="com.rwb.API.CallbackService" ref="callbackService" connections="1" callbacks="1000">
+        <dubbo:method name="addListener">
+            <dubbo:argument index="1" callback="true"/>
+        </dubbo:method>
+    </dubbo:service>
+
+    <bean id="notifyDemoService" class="com.rwb.service.imp.DemoServiceImp"/>
+
+    <!--事件通知-->
+    <dubbo:service interface="com.rwb.API.IDemoService" ref="notifyDemoService"/>
+
+    <!--本地存根-->
+    <bean id="localStubImp" class="com.rwb.service.imp.LocalStubImp"/>
+    <dubbo:service id="localStub" interface="com.rwb.API.LocalStub" ref="localStubImp"/>
+
+    <!--本地伪装 delay表示服务暴露延迟，-1表示spring容器初始化完成后，再暴露服务，
+    可以避免产生死锁，参见：http://dubbo.apache.org/zh-cn/docs/user/demos/delay-publish.html-->
+    <bean id="mockService" class="com.rwb.service.imp.MockServiceImp"/>
+    <dubbo:service interface="com.rwb.API.MockService" ref="mockService" delay="-1"/>
+
+    <!--测试并发控制 executes 并发的链接数量; Load Balance 均衡
+        参见：http://dubbo.apache.org/zh-cn/docs/user/demos/concurrency-control.html-->
+    <bean id="concuurentNumTestImp" class="com.rwb.service.imp.ConcurrencyNumTestImp"/>
+    <dubbo:service interface="com.rwb.API.ConcurrencyNumTest" ref="concuurentNumTestImp"
+                   executes="5" loadbalance="leastactive"/>
+
+    <!--测试连接控制-->
+    <!--token="true" 开启token验证防止客户端绕过注册中心直接消费服务端-->
+    <bean id="acceptsNum" class="com.rwb.service.imp.AcceptsNumTestImp"/>
+    <dubbo:service interface="com.rwb.API.AcceptsNumTset" ref="acceptsNum" connections="3" token="true"/>
+
+    <!--将访问日志输出到当前应用的log4j日志：-->
+    <!--<dubbo:protocol accesslog="true" />-->
+
+   <!-- 将访问日志输出到指定文件：-->
+    <!--<dubbo:protocol accesslog="http://10.20.160.198/wiki/display/dubbo/foo/bar.log" />-->
+
+    <!--dubbo缓存文件：该文件会缓存注册中心列表和服务提供者列表。
+    配置缓存文件后，应用重启过程中，若注册中心不可用，
+    应用会从该缓存文件读取服务提供者列表，进一步保证应用可靠性。-->
+    <dubbo:registry file="${user.home}/output/dubbo.cache" />
+
+</beans>

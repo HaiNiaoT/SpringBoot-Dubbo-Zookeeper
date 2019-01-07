@@ -13,7 +13,38 @@
     <!-- 定义 zookeeper 注册中心地址及协议 -->
     <dubbo:registry address="zookeeper://47.99.242.112:2181" />
 
-    <!--merger聚合操作失败-->
-    <dubbo:reference interface="com.rwb.service.UserService" id="userService" group="*" merger="true"/>
+    <!--merger="true"聚合操作,需要自定义合并策略 参考：META-INF/dubbo/com.alibaba.dubbo.rpc.cluster.Merger与com.rwb.util.UserMerger
+        http://dubbo.apache.org/zh-cn/docs/user/demos/group-merger.html
+    -->
+    <dubbo:reference check="false" interface="com.rwb.service.UserService"
+                     id="userService" group="*" merger="true" actives="20" >
+        <!--cache="lru" 缓存 lru 基于最近最少使用原则删除多余缓存，保持最热的数据被缓存。-->
+        <!--<dubbo:method name="SayHello" cache="lru" async="true"/>-->
+    </dubbo:reference>
+    <!--参数回调-->
+    <dubbo:reference interface="com.rwb.API.CallbackService" id="callbackService"/>
+
+    <!--实现事件通知 在调用之前、调用之后、出现异常时，会触发 oninvoke、onreturn、onthrow 三个事件-->
+    <bean id="demoCallback" class="com.rwb.service.imp.NotifyImp"/>
+    <dubbo:reference id="demoService" interface="com.rwb.API.IDemoService">
+        <dubbo:method name="get" async="true" onreturn="demoCallback.onreturn" onthrow="demoCallback.onthrow" />
+    </dubbo:reference>
+
+    <!--本地存根-->
+    <dubbo:reference id="localRefe" interface="com.rwb.API.LocalStub" stub="com.rwb.service.LocalRefe"/>
+
+    <!--本地伪装 sticky=true 粘性连接：尽可能让客户端总是向同一提供者发起调用，除非该提供者挂了，再连另一台。支持方及
+       http://dubbo.apache.org/zh-cn/docs/user/demos/local-mock.html-->
+    <!--<dubbo:reference id="mockTsetService" interface="com.rwb.API.MockService" mock="com.rwb.service.MockRefe"/>-->
+     <dubbo:reference id="mockTsetService" interface="com.rwb.API.MockService" mock="return null"/>
+    <!--<dubbo:reference id="mockTsetService" interface="com.rwb.API.MockService" mock="com.rwb.service.MockRefe"  sticky="true"/>-->
+
+
+    <!--并发数控制测试 actives并发连接数限制-->
+    <dubbo:reference id="concurrencyNumTest" interface="com.rwb.API.ConcurrencyNumTest" actives="9"/>
+
+    <!--连接数控制测试-->
+    <dubbo:reference id="accpetsNum" connections="2" interface="com.rwb.API.AcceptsNumTset" timeout="30000" />
+
 
 </beans>

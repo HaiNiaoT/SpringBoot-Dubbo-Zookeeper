@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringBootDubboZookeeper/SpringBootDubboZookeeper.iml" filepath="$PROJECT_DIR$/SpringBootDubboZookeeper/SpringBootDubboZookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumerByXml/consumerByXml.iml" filepath="$PROJECT_DIR$/consumerByXml/consumerByXml.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider/provider.iml" filepath="$PROJECT_DIR$/provider/provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider_two/provider_two.iml" filepath="$PROJECT_DIR$/provider_two/provider_two.iml" />
     </modules>

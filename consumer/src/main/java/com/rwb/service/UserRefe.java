@@ -11,12 +11,17 @@ public class UserRefe {
     @Reference(retries = 2,cluster="failfast",loadbalance = "consistenthash")
     UserService userService;
 
-    @Reference(version = "1.1.0")
+    @Reference(version = "1.1.0",async = true)
     ExchangeService exchangeService;
 
-    public String Say(String name){
+    public String SayHello(String name){
         return userService.SayHello(name);
     }
+
+    public String SayBay(String name){
+        return userService.SayHello(name);
+    }
+
 
     public String Word(String name){
         return exchangeService.Word(name);
